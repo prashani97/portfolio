@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+/* custom fonts */
+
+@font-face {
+  font-family: Sen-regular;
+  src: url('./assets/fonts/Sen-Regular.ttf');
+  font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: Sen-bold;
+  src: url('./assets/fonts/Sen-Bold.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Sen-extrabold;
+  src: url('./assets/fonts/Sen-ExtraBold.ttf');
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  font-weight: 400;
+  font-family: 'Sen-regular', sans-serif !important;
+  background-color: #F8F8F8 !important;
+}
+
+.main-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #F8F8F8;
 }
 
-.App-link {
-  color: #61dafb;
+img{
+  height: 348px;
+  width: 335px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar{
+  background: #ffffff;
+  color: #585858;
+  height: 100vh;
+
+}
+
+.nav-toggle{
+  display: flex;
+}
+
+.nav-links{
+  padding-top: 50%;
+}
+
+.link{
+ text-decoration: none;
+}
+
+.nav-icons{
+  color: #585858;
+}
+
+.nav-text{
+  color: #585858;
+}
+
+h1{
+  font-size: 64px !important;
+  font-family: 'Sen-bold', sans-serif !important;
+}
+
+h2{
+  font-size: 36px !important;
+  font-family: 'Sen-bold', sans-serif !important;
+}
+
+.quote{
+  color: #AFAFAF;
+}
+
+.qual-date{
+  text-transform: uppercase;
+  font-size: 32px;
+  color: #585858;
+}
+
+.qual-institute{
+ text-transform: capitalize;
+ color: #585858;
+ font-size: 20px;
+}
+
+.qual-qual{
+  font-size: 20px;
 }
