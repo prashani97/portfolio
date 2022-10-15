@@ -9,7 +9,7 @@ import Publication from './pages/Publication';
 import Affliations from './pages/Affliations';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
-import Sidebar from './components/Sidebar';
+import Layout from './components/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Router>
-        <Sidebar>
+        <Layout>
           <Routes>
             <Route path='' element={<Home/>}/>
             <Route path='/about' element={<About/>}/>
@@ -30,7 +30,7 @@ function App() {
             <Route path='/contact' element={<Contact/>}/>
             <Route path='*' element={<>not found</>}/>
           </Routes>
-        </Sidebar>
+        </Layout>
       </Router>
     </>
   );

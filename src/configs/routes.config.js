@@ -1,0 +1,48 @@
+import {FaHome, FaUser, FaChalkboardTeacher, FaBookOpen, FaSearch, FaBook, FaUsers, FaPenNib, FaAt} from 'react-icons/fa'
+
+export const routes = [
+    { 
+        path:"",
+        title:"Home",
+        icon:<FaHome/>
+    },
+    { 
+        path:"/about",
+        title:"About",
+        icon:<FaUser/>
+    },
+    { 
+        path:"/administration",
+        title:"Administration",
+        icon:<FaChalkboardTeacher/>
+    },{ 
+        path:"/supervision",
+        title:"Supervision",
+        icon:<FaBookOpen/>
+    },
+    { 
+        path:"/research",
+        title:"Research",
+        icon:<FaSearch/>
+    },
+    { 
+        path:"/publications",
+        title:"Publications",
+        icon:<FaBook/>
+    },
+    { 
+        path:"/affliations",
+        title:"Affliations",
+        icon:<FaUsers/>
+    },
+    { 
+        path:"/blog",
+        title:"Blog",
+        icon:<FaPenNib/>
+    },
+    { 
+        path:"/contact",
+        title:"Contact",
+        icon:<FaAt/>
+    },
+]
